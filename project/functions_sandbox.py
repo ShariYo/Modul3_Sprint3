@@ -76,10 +76,21 @@ def reg_formula(model, X):
 
 
 def f_histogram(
-    xaxis, bins=20, kde=False, figsize=(6, 4), label=None, xlabel=None, title=None
+    xaxis,
+    bins=20,
+    kde=False,
+    figsize=(6, 4),
+    label=None,
+    xlabel=None,
+    title=None,
+    hue=None,
+    palette=None,
+    alpha=None,
 ):
     plt.figure(figsize=figsize)
-    sns.histplot(x=xaxis, bins=bins, label=label, kde=kde)
+    sns.histplot(
+        x=xaxis, bins=bins, label=label, kde=kde, hue=hue, palette=palette, alpha=alpha
+    )
     plt.xlabel(xlabel)
     plt.title(title, size=14, fontweight="bold", ha="center")
     plt.legend()
@@ -167,13 +178,24 @@ def f_displot(
     xaxis=None,
     yaxis=None,
     hue=None,
-    multiple="stack",
+    multiple="layer",
+    palette=None,
+    kind="hist",
+    kde=None,
     title=None,
     xlabel=None,
     ylabel=None,
     figsize=(5, 3),
 ):
-    sns.displot(data=data, x=xaxis, hue=hue, multiple=multiple)
+    sns.displot(
+        data=data,
+        x=xaxis,
+        hue=hue,
+        multiple=multiple,
+        palette=palette,
+        kind=kind,
+        kde=kde,
+    )
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.title(title, size=14, fontweight="bold", ha="center")

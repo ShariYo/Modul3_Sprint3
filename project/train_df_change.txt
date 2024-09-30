@@ -1,0 +1,2 @@
+- columns labels lower cased, empty spaces removed
+- all numeric features with float dtype were converted to int
