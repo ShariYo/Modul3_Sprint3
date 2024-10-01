@@ -155,11 +155,15 @@ def f_countplot(
     title=None,
     xlabel=None,
     ylabel=None,
+    order=None,
+    palette=None,
     figsize=(5, 3),
 ):
     plt.figure(figsize=figsize)
     sns.set_palette("crest")
-    ax = sns.countplot(data=data, x=xaxis, y=yaxis, hue=hue, stat=stat)
+    ax = sns.countplot(
+        data=data, x=xaxis, y=yaxis, hue=hue, stat=stat, palette=palette, order=order
+    )
     for container in ax.containers:
         ax.bar_label(container)
     ax.axes.get_yaxis().set_visible(False)
