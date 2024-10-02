@@ -1,2 +1,5 @@
 - columns labels lower cased, empty spaces removed
 - all numeric features with float dtype were converted to int
+- new feature created - age_cl
+- new features added from cabin -> cabindeck, cabinnum, cabinside
+- cabinnum dtype converted from object to int
