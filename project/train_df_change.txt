@@ -3,3 +3,5 @@
 - new feature created - age_cl
 - new features added from cabin -> cabindeck, cabinnum, cabinside
 - cabinnum dtype converted from object to int
+- new feature createn from roomservice, foodcourt, shoppingmall, spa and vrdec ->
+named lux_spent
