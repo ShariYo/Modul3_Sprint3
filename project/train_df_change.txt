@@ -1,7 +1,8 @@
 - columns labels lower cased, empty spaces removed
 - all numeric features with float dtype were converted to int
 - new feature created - age_cl
+- age feature deleted
 - new features added from cabin -> cabindeck, cabinnum, cabinside
+- cabin feature deleted
 - cabinnum dtype converted from object to int
-- new feature createn from roomservice, foodcourt, shoppingmall, spa and vrdec ->
-named lux_spent
+- all luxury spendings were transformed to logarithmics

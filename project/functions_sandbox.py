@@ -28,6 +28,7 @@ def calc_vif(x):
     vif = pd.DataFrame()
     vif["variables"] = x.columns
     vif["VIF"] = [variance_inflation_factor(x.values, i) for i in range(x.shape[1])]
+    vif = vif.sort_values(by="VIF", ascending=False)
 
     return vif
 
