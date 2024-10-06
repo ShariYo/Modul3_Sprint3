@@ -64,7 +64,7 @@ def model_result_calc(target_test, target_predicted, pos_label):
     print(f"Recall score: {recall:.2f}")
     print(f"F1 score: {f1:.2f}")
 
-    return
+    pass
 
 
 def reg_formula(model, X):
