@@ -1,0 +1,17 @@
+- SimpleImputer(strategy="mean") -> SimpleImputer(strategy="median")
+- Added hypothesis for normall age distribution check
+- Added QQ plot for age distribution to check normality
+- Checked age association with transported, using Spearman's Rank Correlation with
+hypothesis
+- Changed cross-validation place to the part of dataset would be used
+- In randomizedsearchcv changed to KFold_cv instead of stratified
+- Removed stratifiend_kfold_cv results since it's not needed
+- Added docstrings to created functions in project
+- For spearman's correlation binary features were removed
+
+path_train = r"D:\IT_projects\Turing_Colledge\Modul3\Sprint3\project\train.csv"
+path_test = r"D:\IT_projects\Turing_Colledge\Modul3\Sprint3\project\test.csv"
+path_train = r"C:\Users\vykintas.palskys\OneDrive - Thermo Fisher Scientific\Desktop\modul3sprint3\train.csv"
+path_test = r"C:\Users\vykintas.palskys\OneDrive - Thermo Fisher Scientific\Desktop\modul3sprint3\test.csv"
+
+r"D:\IT_projects\Turing_Colledge\Modul3\Sprint3\project\model.pkl
